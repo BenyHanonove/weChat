@@ -1,0 +1,38 @@
+.start.container{
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+.start-first.row{
+    height: 50vh;
+    background-image: url('https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg');
+}
+
+.start-second.row{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-header{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.ad-text{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.start-btn{
+    margin-bottom: 15vh;
+    width: 40%;
+}
+
+.bubbles.row{
+    margin-top: 3vh;
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+}
