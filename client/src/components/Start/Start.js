@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Container ,Row} from "react-bootstrap"; 
 import startLottie from "../../assets/statLottie.json";
 import LottieAnimation from '../LottieAnimation/LottieAnimation.js';
+import {moveToSigninPage} from "../../functions/url.js";
 import "./Start.css";
 
 function Start() {
@@ -18,7 +19,7 @@ function Start() {
       <Row className='start-second'>
         <h3 className='slogan-header'>{slogan}</h3>
         <h6 className='ad-text'>{ad}</h6>
-        <Button className='start-btn'>Get Start</Button>
+        <Button className='start-btn' onClick={moveToSigninPage}>Get Start</Button>
       </Row>
 
     </Container>

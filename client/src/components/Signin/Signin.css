@@ -1,0 +1,46 @@
+.signin.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signin-form{
+    width:90% ;
+    border-radius: 3vh ;
+    padding-bottom: 3vh;
+    box-shadow: 0 0 2ch rgba(0, 0, 0, 0.2);
+}
+
+.signin.btn.btn-primary{
+    margin-top: 4vh;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.form-label{
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 2vh;
+}
+
+.form-control{
+    margin-left: 15%;
+    width: 70%;
+}
+
+.signup-text.container{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-label{
+    color: rgba(13,110,253,255);
+    margin-left: 1vh;
+}
+
+.signup-label:hover{
+    color:rgb(14, 7, 116) ;
+}
