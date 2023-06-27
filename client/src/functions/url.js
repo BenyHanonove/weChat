@@ -3,9 +3,17 @@ export const moveToIndexPage = ()=>{
 };
 
 export const moveToSigninPage = ()=>{
-    window.location.replace("/signin");
+    window.location.replace("/login");
 };
 
 export const moveToSignupPage = ()=>{
-    window.location.replace("/signup");
+    window.location.replace("/register");
+};
+
+export const moveToSettingsPage = ()=>{
+    window.location.replace("/settings");
+};
+
+export const moveToChatPage = ()=>{
+    window.location.replace("/chat");
 };
