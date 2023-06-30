@@ -1,0 +1,33 @@
+.side-bar.container{
+    position: absolute;
+    height: 100vh;
+    width: 20vh;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-text-side-bar.nav-link{
+    margin-top: 5vh;
+    margin-left: 2vh;
+}
+
+.sidebar.navbar.navbar-expand-lg.navbar-light.bg-transparent{
+    height: 100%;
+}
+
+
+.top-bar.navbar.navbar-expand-lg.navbar-light.bg-transparent{
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+
+}
+
+.navbar-toggler.collapsed ,.navbar-toggler{
+    margin-left: 2vh;
+}
+
+.nav-text-top-bar.nav-link{
+    margin-top: 2vh;
+    margin-left: 2vh;
+}

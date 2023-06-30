@@ -10,9 +10,6 @@ export const moveToSignupPage = ()=>{
     window.location.replace("/register");
 };
 
-export const moveToSettingsPage = ()=>{
-    window.location.replace("/settings");
-};
 
 export const moveToChatPage = ()=>{
     window.location.replace("/chat");

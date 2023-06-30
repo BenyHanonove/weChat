@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Start from "../components/Start/Start.js";
-import BottomNavbar from '../components/BottomNavbar/BottomNavbar.js';
+import ChatPage from './ChatPage.js';
 
 function IndexPage() {
 
-  const [connectedUser ,SetConnectedUser] = useState(true);
+  const [connectedUser ,SetConnectedUser] = useState(false);
 
   return (
     <div> 
-      {!connectedUser ? <BottomNavbar/> :<Start/>} 
+      {!connectedUser ? <ChatPage/> :<Start/>} 
     </div>
   )
 }
