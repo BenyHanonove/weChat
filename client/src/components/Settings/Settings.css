@@ -17,14 +17,14 @@
     margin-top: 2vh;
 }
 
-.setting-item.col-lg-4.col-md-6.col-12{
+.setting-item-web.col-lg-4.col-md-6.col-12{
     margin-top: 8vh;
 }
 
-
-.delete-account.row{
-    margin-top: 8vh;
+.setting-item-mobile.col-lg-4.col-md-6.col-12{
+    margin-top: 3.5vh;
 }
+
 
 .setting-item-header:hover{
     color: rgba(53,115,204,255);
@@ -33,9 +33,9 @@
 
 .settings-mobile.container{
     border-radius: 5px;
-    padding-left: 4vh;
+    padding-left: 6vh;
 }
 
 .settings-header-mobile.row{
-    margin-top: 5vh;    
+    margin-top: 3vh;    
 }
