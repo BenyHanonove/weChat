@@ -10,7 +10,14 @@ export const moveToSignupPage = ()=>{
     window.location.replace("/register");
 };
 
+export const moveToChatsPage = ()=>{
+    window.location.replace("/chats");
+};
 
-export const moveToChatPage = ()=>{
-    window.location.replace("/chat");
+export const moveToSettingsPage = ()=>{
+    window.location.replace("/settings");
+};
+
+export const moveToFriendsPage = ()=>{
+    window.location.replace("/friends");
 };

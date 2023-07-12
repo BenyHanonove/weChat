@@ -1,0 +1,77 @@
+.friends-web.container{
+    position: relative;
+    margin-top: 15vh;
+    top: 0;
+    left: 10vh;
+    height: 60vh;
+    border-radius: 5px;
+    padding-left: 7vh;
+    padding-right: 4vh;
+}
+
+.friends.row{
+    height: 100%;
+    width: 100%;
+}
+
+.friends-search.col-lg-6.col-md-6.col-12{
+    height: 90%;
+}
+
+.friends-search.row{
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.friends-search-input{
+    margin: 0;
+}
+
+.my-friends.col-lg-6.col-md-6.col-12{
+    height: 90%;
+}
+
+.scroll-view-search.container{
+    padding-left: 3vh;
+    padding-right: 3vh;
+    height: 40vh;
+    margin-top: 7vh;
+    width: 70%;
+    overflow-y: scroll;
+}
+
+.new-friend.row{
+    margin-top: 1vh;
+    border-bottom: 1px solid grey;
+    height: 3.5vh;
+}
+.my-friends.row{
+    margin-top: 5vh;
+}
+
+.my-friend.img-fluid{
+    height: 13vh;
+}
+
+.friends-mobile.container{
+    margin-top: 4vh;
+    height: 60vh;
+    padding-left: 4vh;
+}
+
+.new-friend-text{
+    width: 60%;
+    float: left;
+    position: relative;
+}
+
+.new-friend-btn{
+    width: 30%;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

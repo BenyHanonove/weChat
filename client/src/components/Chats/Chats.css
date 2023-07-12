@@ -1,0 +1,39 @@
+.chats-web.container{
+    position: relative;
+    margin-top: 10vh;
+    top: 0;
+    left: 10vh;
+    height: 60vh;
+    padding-left: 7vh;
+    padding-right: 4vh;
+}
+
+.chats-search.row{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.chats-search-input.form-control{
+    width: 15wh;
+    margin-top: 4vh;
+    margin-left: 0;
+}
+
+
+.scroll-chats.container{
+    margin-top: 5vh;
+    height: 65vh;
+    overflow-y: scroll;
+    padding-bottom: 2vh;
+}
+
+.scroll-chats.container::-webkit-scrollbar {
+    display: none;
+}
+
+.chats-mobile.container{
+    position: relative;
+    margin-top: 4vh;
+    height: 60vh;
+}

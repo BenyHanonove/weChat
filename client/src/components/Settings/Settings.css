@@ -1,0 +1,41 @@
+.settings-web.container{
+    position: relative;
+    margin-top: 25vh;
+    top: 0;
+    left: 10vh;
+    height: 60vh;
+    border-radius: 5px;
+    padding-left: 7vh;
+    padding-right: 4vh;
+}
+
+.settings-header-web.row{
+    height: 2vh;
+}
+
+.settings-menu.row{
+    margin-top: 2vh;
+}
+
+.setting-item.col-lg-4.col-md-6.col-12{
+    margin-top: 8vh;
+}
+
+
+.delete-account.row{
+    margin-top: 8vh;
+}
+
+.setting-item-header:hover{
+    color: rgba(53,115,204,255);
+}
+
+
+.settings-mobile.container{
+    border-radius: 5px;
+    padding-left: 4vh;
+}
+
+.settings-header-mobile.row{
+    margin-top: 5vh;    
+}

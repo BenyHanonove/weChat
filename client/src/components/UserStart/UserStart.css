@@ -1,0 +1,46 @@
+.user-start-mobile.row , .user-start-web.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: absolute;
+    width: 100%;
+}
+
+.user-start-web.row{
+    margin-top: 8vh;
+    margin-left: 23%;
+    width:70%;
+}
+
+
+.header.col-12{
+    padding-left:4vh;
+    padding-right:4vh;
+    margin-left: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+
+.btns.col-12{
+    float: left;
+    width: 100wh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh ;
+}
+
+.btn-user-start-left{
+    margin-right:4vh;
+    height: 50%;
+}
+
+.btn-user-start-right{
+    margin-left:4vh;
+    height: 50%;
+}

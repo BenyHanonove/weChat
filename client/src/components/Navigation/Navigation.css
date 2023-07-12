@@ -4,7 +4,8 @@
     width: 20vh;
     top: 0;
     left: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.2) inset;
+    padding-left: 3vh;
 }
 
 .nav-text-side-bar.nav-link{
@@ -12,15 +13,22 @@
     margin-left: 2vh;
 }
 
-.sidebar.navbar.navbar-expand-lg.navbar-light.bg-transparent{
-    height: 100%;
+.nav-text-side-bar.nav-link:hover ,.nav-text-top-bar.nav-link:hover{
+    color: rgba(53,115,204,255);
 }
 
+.sidebar.navbar.navbar-expand-lg.navbar-light.bg-transparent{
+    margin-top: 15vh;
+}
+
+.profile.img-fluid{
+    margin-top: 8vh;
+    border-radius: 10vh;
+}
 
 .top-bar.navbar.navbar-expand-lg.navbar-light.bg-transparent{
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.2) inset;
 }
 
 .navbar-toggler.collapsed ,.navbar-toggler{
