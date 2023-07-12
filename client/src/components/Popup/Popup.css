@@ -9,6 +9,7 @@
     align-items: center;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    z-index: 0;
 }
 
 
@@ -18,6 +19,7 @@
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .popup-.mobile.container{
@@ -29,6 +31,24 @@
 }
 
 .popup-content{
-    margin-top: 3vh;
-    font-size: 2vh
+    margin-top: 4vh;
+    font-size: 2vh;
+}
+
+.link.container{
+    margin-top: 4.5vh;
+    border: 3px solid black;
+    max-width: 50vh;
+}
+
+.text-center.link{
+    margin-top: 1vh;
+    color: rgba(53,115,204,255);
+}
+
+.popup-btn.container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

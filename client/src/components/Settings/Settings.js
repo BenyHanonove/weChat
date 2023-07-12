@@ -1,64 +1,32 @@
 import React ,{useState} from 'react';
 import {Row ,Col ,Container} from "react-bootstrap";
-import "./Settings.css";
 import Popup from '../Popup/Popup';
+import {moveToIndexPage} from "../../functions/url.js";
+import {optionsMap} from "../../functions/consts.js"
+import "./Settings.css";
 
 function Settings({expanded}) {
 
   const [popupOpen, setPopupOpen] = useState(false);
-  const [popupHeader, setPopupHeader] = useState('');
-  const [popupContent, setPopupContent] = useState('');
+  const [popupData ,setPopupData] = useState(null);
 
-  const openPopup = (header, content) => {
-    setPopupHeader(header);
-    setPopupContent(content);
+  const openPopup = (val ,key) => {
+
+    if(key === "logout"){
+     moveToIndexPage(); 
+     return;
+    }
+
+    setPopupData(val)
     setPopupOpen(true);
   };
 
   const closePopup = () => {
     setPopupOpen(false);
-    setPopupHeader('');
-    setPopupContent('');
+    setPopupData(null);
   };
 
-  const optionsMap = {
-    "editProfile":{
-      label:"✏️ Edit Profile",
-      description:"Updates user profile information",
-      popText:null,
-    },
-    "invite":{
-      label:"🤝 Invite a Friend",
-      description:"Sends a friend invitation",
-      popText:"here is your link please send this to a new user",
-      link:"blah blah", 
-    },
-    "privacy":{
-      label:"🔒 Privacy",
-      description:"Manages privacy preferences",
-      popText:"At our chat app, we place a paramount emphasis on your privacy."+  
-      "We take extensive measures to protect your personal information, employingrobust security" + 
-      "protocols to ensure encrypted and secure communication. Rest assured, we never disclose your" + 
-      "data to any third parties. Your privacy is our top priority."
-    },
-    "help":{
-      label:"❓ Help & Support",
-      description:"Provides assistance and support", 
-    },
-    "about":{
-      label:"ℹ️ About Us",
-      description:"Displays information about the company", 
-    },
-    "logout":{
-      label:"🚪 Log Out",
-      description:"Logs the user out of the current session", 
-    },
-    "delete":{
-      label:"🗑️ Delete Account",
-      description:"Removes the user account permanently", 
-    },
-  };
-
+ 
 
   return (
     <Container className={expanded ? 'settings-web' :'settings-mobile'}>
@@ -71,7 +39,7 @@ function Settings({expanded}) {
           {
             Object.entries(optionsMap).map(([key,value])=>(
               <Col className={expanded ? 'setting-item-web': 'setting-item-mobile'} key={key} xs={12} md={6} lg={4}>
-                <h5 className='setting-item-header' onClick={()=>openPopup(value.label ,value.popText)}>{value.label}</h5>
+                <h5 className='setting-item-header' onClick={()=>openPopup(value ,key)}>{value.label}</h5>
                 <p>{value.description}</p>
               
               </Col>
@@ -88,8 +56,8 @@ function Settings({expanded}) {
         expanded={expanded} 
         isOpen={popupOpen} 
         onClose={closePopup} 
-        header={popupHeader} 
-        content={popupContent}
+        onOpen = {openPopup}
+        data={popupData}
         />}
 
     </Container>
